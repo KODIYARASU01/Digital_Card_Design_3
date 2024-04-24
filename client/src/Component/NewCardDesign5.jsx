@@ -1,10 +1,15 @@
 import React, { useRef, useEffect, useState } from "react";
 import "./NewCardDesign5.scss";
 import banner_img from "../assets/background2.jpg";
+import gall1 from '../assets/qrcode_back_image.jpg';
+import gall2 from '../assets/programming-background-collage.jpg';
+import gall3 from '../assets/new_card_design3.2.jpg';
 import avatar from "../assets/profile.png";
 import shape from "../assets/g2.png";
 import graph from "../assets/graph3.png";
 import graph5 from "../assets/graph5.png";
+import cross from '../assets/cross.gif';
+
 import service_graph from "../assets/service_graph.png";
 import feedback_svg from "../assets/feedback_svg.svg";
 import arrow from "../assets/arrow4.jpg";
@@ -41,6 +46,20 @@ import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 
+  //openFullImage preview:
+  function openFullImage(pic){
+    let fullImageBox=document.getElementById('fullImageBox');
+    let fullImage=document.getElementById('fullImage');
+    fullImageBox.style.display='block';
+    fullImage.src=pic
+  };
+
+  //Close FullImage Preview
+  function closeFullImage(){
+    let fullImageBox=document.getElementById('fullImageBox');
+
+    fullImageBox.style.display='none'
+  };
 
 const NewCardDesign5 = () => {
   let [serviceLoad, setServiceLoad] = useState(false);
@@ -543,18 +562,28 @@ const NewCardDesign5 = () => {
                 </form>
               </div>
             </div>
-            {/* Appoinment */}
-            <div className="card5_box7">
+              {/* Gallery */}
+              <div className="card5_box7">
               <div className="gallery_title">
                 <img src={arrow} alt="arrsow" />
                 <h4>Gallery</h4>
                 <img src={arrow2} alt="arrsow" />
               </div>
               <div className="gallery_container">
+              <div className="full_image" id="fullImageBox">
+                <div className="close_Full_Image_gallery">
+<img src={cross} alt="cross" onClick={closeFullImage} />
+                </div>
+                <img src={banner_img} alt="gallery" id="fullImage" />
+                </div>
                 <div className="gallerys">
-                  <img src={banner_img} alt="banner" />
+                  <img src={banner_img} alt="gallery" onClick={(e)=>openFullImage(e.target.src)}/>
+                  <img src={gall1} alt="gallery" onClick={(e)=>openFullImage(e.target.src)}/>
+                  <img src={gall2} alt="gallery" onClick={(e)=>openFullImage(e.target.src)}/>
+                  <img src={gall3} alt="gallery" onClick={(e)=>openFullImage(e.target.src)}/>
                 </div>
               </div>
+     
             </div>
             {/* Testimonial */}
             <div className="card5_box8">
