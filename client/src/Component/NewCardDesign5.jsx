@@ -7,7 +7,7 @@ import gall3 from '../assets/new_card_design3.2.jpg';
 import avatar from "../assets/profile.png";
 import shape from "../assets/g2.png";
 import graph from "../assets/graph3.png";
-import graph5 from "../assets/graph5.png";
+import graph5 from "../assets/graph6.png";
 import cross from '../assets/cross.gif';
 
 import service_graph from "../assets/service_graph.png";
@@ -427,7 +427,7 @@ const NewCardDesign5 = () => {
               <div className="svg_top">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                   <path
-                    fill="#e0ffff"
+                    fill="#68907a"
                     fill-opacity="1"
                     d="M0,192L1440,32L1440,320L0,320Z"
                   ></path>
@@ -440,9 +440,7 @@ const NewCardDesign5 = () => {
               </div>
               <div className="service_container">
                 <div className="service_box">
-                  <div className="graph">
-                    <img src={service_graph} alt="service_graph" />
-                  </div>
+              
                   <div className="icon">
                     <img
                       width="48"
@@ -461,9 +459,7 @@ const NewCardDesign5 = () => {
                   </div>
                 </div>
                 <div className="service_box">
-                  <div className="graph">
-                    <img src={service_graph} alt="service_graph" />
-                  </div>
+            
                   <div className="icon">
                     <img
                       width="48"
@@ -485,7 +481,7 @@ const NewCardDesign5 = () => {
               <div className="svg_bottom">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                   <path
-                    fill="#e0ffff"
+                    fill="#68907a"
                     fill-opacity="1"
                     d="M0,288L1440,128L1440,0L0,0Z"
                   ></path>
@@ -599,7 +595,7 @@ const NewCardDesign5 = () => {
                   viewBox="0 0 1440 320"
                 >
                   <path
-                    fill="#e0ffff"
+                    fill="#68907a"
                     fill-opacity="1"
                     d="M0,288L1440,128L1440,0L0,0Z"
                   ></path>
@@ -611,7 +607,7 @@ const NewCardDesign5 = () => {
                   viewBox="0 0 1440 320"
                 >
                   <path
-                    fill="#e0ffff"
+                    fill="#68907a"
                     fill-opacity="1"
                     d="M0,256L1440,0L1440,320L0,320Z"
                   ></path>
@@ -993,7 +989,7 @@ const NewCardDesign5 = () => {
                  {/* Footer */}
                  <div className="card4_box_12">
                 <div className="footer_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,64L1440,224L1440,320L0,320Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#68907a" fill-opacity="1" d="M0,64L1440,224L1440,320L0,320Z"></path></svg>
                 <p>All Copyright Reserved &copy; 2024 myvirtualcard.in</p>
                 </div>
               </div>
