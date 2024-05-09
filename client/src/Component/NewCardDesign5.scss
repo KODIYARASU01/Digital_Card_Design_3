@@ -9,7 +9,7 @@
 .newCard_design_container {
   width: 100vw;
   height: 100vh;
-  background-image: url(../../../assets/Background/new_card_design3.1.jpg);
+  background-image: url('https://img.freepik.com/free-vector/abstract-business-professional-background-banner-design-multipurpose_1340-16869.jpg?t=st=1715252335~exp=1715255935~hmac=7f47f21de0cdfcb6bc2a0e6f0dfb89152ff0b93c403a30f18ab71a90496f33b0&w=900');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -125,9 +125,9 @@
           }
 
           small {
-            font-size: 0.9rem;
-            font-size: 550;
-            color: darkgray;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #68907a;
 
             @media screen and (max-width: 475px) {
               font-size: 0.7rem;
@@ -169,6 +169,7 @@
         width: 100%;
 
         .link {
+          transition: all 0.3s ease-in-out;
           a {
             text-decoration: none;
             transition: all 0.3s ease-in-out;
@@ -187,8 +188,8 @@
             img {
               position: absolute;
               left: 50%;
-              top: 0%;
-              transform: translate(-50%, -50%);
+              top: 50%;
+              transform: translate(-50%, -50%) rotate(180deg);
               width: 80px;
               z-index: -10;
 
@@ -198,10 +199,12 @@
               }
             }
 
-            &:hover {
-              filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.4));
-              transition: all 0.3s ease-in-out;
-            }
+        
+          }
+          &:hover {
+            filter: drop-shadow(0px 4px 5px rgba(63, 63, 63, 0.6));
+            scale: 1.10;
+            transition: all 0.3s ease-in-out;
           }
         }
 
@@ -295,6 +298,47 @@
               @media screen and (max-width: 576px) {
                 font-size: 0.5rem;
               }
+            }
+          }
+        }
+      }
+      .add_to_contact {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem auto;
+
+        button {
+          width: 50%;
+          padding: 10px 1rem;
+          outline: none;
+          border: transparent;
+          background-color: #68907a;
+          color: #fff;
+          font-size: 0.9rem;
+          font-weight: 550;
+          border-radius: 5px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          transition: all 0.4s ease-in-out;
+          i {
+            color: #fff;
+            transition: all 0.4s ease-in-out;
+          }
+
+          &:hover {
+            background-color: #fff;
+            color: #2e2e2e;
+            filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.5));
+            transition: all 0.4s ease-in-out;
+
+            i{
+              color: #2e2e2e;
+              transition: all 0.4s ease-in-out;
             }
           }
         }
@@ -626,7 +670,7 @@
           margin: auto;
           width: 100%;
           height: 100%;
-          background-color: #68907a;
+          background-color: #ffffffa4;
 
           // display: none;
 
@@ -1559,10 +1603,10 @@
       padding: 0rem 0rem 1rem 0rem;
       margin: 0.1rem auto;
       // background-image: url("../assets/new_card_design3.2.jpg");
-      background-color: #68907a;
+      // background-color: #68907a;
       background-position: center;
       background-repeat: no-repeat;
-      filter: drop-shadow(5px 4px 5px rgba(0, 0, 0, 0.5));
+      
       background-size: cover;
 
       .inquiries_title {
@@ -1576,6 +1620,7 @@
           width: 50px;
           height: 50px;
           mix-blend-mode: multiply;
+   
           z-index: 900;
         }
         h4 {
@@ -1583,7 +1628,7 @@
           font-weight: 600;
           font-style: normal;
           z-index: 500;
-          color: #fff;
+          color: #131313;
         }
       }
       .inquiries_container5 {
@@ -1612,7 +1657,7 @@
               font-size: 0.8rem;
               letter-spacing: 1px;
               color: rgb(3, 3, 3);
-              font-weight: 500;
+              font-weight: 550;
             }
             .input {
               width: 100%;
@@ -1626,6 +1671,8 @@
                 border-radius: 5px;
                 background: transparent;
                 background-color: rgb(255, 255, 255);
+                border-bottom: 2px solid #68907a;
+                border-left: 2px solid #68907a;
                 caret-color: rgb(43, 43, 43);
 
                 &::placeholder {
@@ -1659,7 +1706,7 @@
               align-items: center;
               justify-content: flex-end;
               gap: 10px;
-              background-color: #b2f3cf;
+              background-color: #68907a;
 
               width: auto;
               padding: 12px 1rem;
@@ -1671,7 +1718,7 @@
               font-size: 0.8rem;
               border-radius: 10px;
               cursor: pointer;
-              color: #1a1a1a;
+              color: #ffffff;
               transition: all 0.4s ease-in;
 
               img {
